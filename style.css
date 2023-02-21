@@ -1,0 +1,936 @@
+@font-face {
+    font-family: copper;
+    src: url(CooperLtBTWXXLight.ttf);
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    z-index: 9999;
+    padding: 3.5vw 1vw;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #fff; */
+}
+
+#nav h1 {
+    font-family: SequalSans;
+    font-weight: 600;
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+
+#part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#part2 a {
+    text-decoration: none;
+    margin-right: 3.5vw;
+    color: black;
+    font-size: 1.1vw;
+    font-weight: 400;
+    font-family: SequalSans;
+}
+
+#part2 a:hover {
+    border-bottom: 2px solid springgreen;
+}
+
+#nav #part2 a:nth-last-child(1) {
+    border: .5px solid black;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#nav #part2 a:nth-last-child(1) h5 {
+    font-family: SequalSans;
+    position: relative;
+    z-index: 9;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#nav #part2 a:nth-last-child(1) #green {
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all ease .5s;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green {
+    left: 0;
+}
+
+#page1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+#page1 h1 {
+    pointer-events: none;
+    font-size: 6vw;
+    text-transform: capitalize;
+    font-family: copper;
+    text-align: center;
+    font-weight: 500;
+    z-index: 99;
+    position: relative;
+}
+
+#page1>h1::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: .9vw;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#page1 #img1 {
+    height: 70vh;
+    width: 21vw;
+    left: 9%;
+    top: 20%;
+    position: absolute;
+}
+
+#page1 #img2 {
+    height: 12vw;
+    width: 17vw;
+    right: 23%;
+    top: 23%;
+    position: absolute;
+}
+
+#page1 #img3 {
+    height: 35vh;
+    width: 18vw;
+    right: 7%;
+    top: 55%;
+    position: absolute;
+}
+#page1 img{
+    transition: all 0.8s ease;
+}
+#page1 img:hover{
+    margin-top: -15px;
+}
+
+#page1 h5 {
+    position: absolute;
+    bottom: 25%;
+    font-family: SequalSans;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+#icon {
+    position: absolute;
+    bottom: 24%;
+    left: 56%;
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+
+}
+
+#page1 i {
+    position: relative;
+    z-index: 9;
+    padding: .6vh 1.5vw;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#page1 #icon #green1 {
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all ease .5s;
+}
+
+#page1 #icon:hover #green1 {
+    left: 0
+}
+
+#page2 {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+
+#page2 h2 {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: SequalSans;
+
+}
+
+#page2 h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3vw;
+    font-weight: 400;
+    font-family: SequalSans;
+}
+
+#page2 h1 span {
+    position: relative;
+}
+
+#page2 h1 span::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 4.8vw;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    bottom: -105%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+#icon1 {
+    position: relative;
+    width: 10vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.anime {
+    gap: .5vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 h5 {
+    font-size: 1.7vw;
+    font-family: sequalsans;
+}
+
+#icon1 h5 {
+    font-size: 1.9vw;
+}
+
+#icon1 i {
+    position: relative;
+    z-index: 9;
+    padding: .6vh 1.5vw;
+    font-size: 1.9vw;
+    font-weight: 500;
+}
+
+#icon1 #green2 {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    transition: all ease .5s;
+
+}
+
+#icon1:hover #green2 {
+    left: 0;
+}
+
+#page3 {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+}
+
+#photu {
+    width: 50%;
+    display: flex;
+    /* background-color: red; */
+}
+
+#lphotu1 {
+    width: 15vw;
+    min-height: 10vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+#lphotu2 {
+    width: 15vw;
+    margin-top: 3vw;
+    object-fit: cover;
+    /* min-height: 10vh; */
+    object-position: center;
+}
+
+#rphotu1 {
+    margin-left: 5vw;
+    width: 30vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#rphotu2 {
+    margin-left: 5vw;
+    margin-top: 3vw;
+    width: 30vw;
+    object-fit: cover;
+    /* min-height: 100vh; */
+    object-position: center;
+}
+
+#solution {
+    padding-left: 15vh;
+    width: 50%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+
+#solution h1 {
+    padding-top: 40vh;
+    font-size: 3.8vw;
+    font-weight: 500;
+    font-family: copper;
+    margin-bottom: 3vw;
+}
+
+#solution h1 span {
+    position: relative;
+}
+
+#solution h1 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .9vw;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#solution p {
+    width: 100%;
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 1.5vw;
+}
+
+#pic {
+    width: 8vh;
+    height: 8vh;
+    /* background-color: red; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about h5 {
+    font-size: 1.7vw;
+    font-weight: 500;
+    font-family: SequalSans;
+}
+
+.icon {
+    width: 10vh;
+    height: 5vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon i {
+    position: relative;
+    z-index: 999;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.green1 {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    transition: all ease .5s;
+    background-color: springgreen;
+}
+
+.icon:hover .green1 {
+    left: 0%;
+}
+
+#page4 {
+    width: 100%;
+    /* min-height: 100vh; */
+    /* background-color: red; */
+
+}
+
+#brandpic {
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.pic1 {
+    position: relative;
+    border-radius: 5px;
+    width: 35vw;
+    /* background-color: yellow; */
+    height: 60vh;
+    overflow: hidden;
+}
+
+.pic1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease .4s;
+}
+
+.pic1:hover img {
+    scale: 1.1;
+}
+
+.brand {
+    padding-left: 2vw;
+    position: absolute;
+    /* background-color: transparent; */
+    bottom: 3%;
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: copper;
+    font-weight: 400;
+}
+
+#about2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 10vh;
+}
+
+#about2 h5 {
+    font-size: 1.5vw;
+    font-family: copper;
+    font-weight: 500;
+}
+
+#page5 {
+    cursor:grab;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: copper;
+}
+.top{
+    text-align: center;
+     text-transform: uppercase;
+     font-size: .5vw;
+    font-weight: 400;
+}
+.middle{
+    font-size: 2.3vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    font-weight: 400;
+}
+.bottom{
+    text-align: center;
+     text-transform: uppercase;
+     font-size: 1vw;
+}
+.bottom h5{
+    margin-bottom: 10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page6{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+#tcontact{
+    display: flex;
+    justify-content: center;
+}
+#contact{
+    position: relative;
+    z-index: 999;
+    border-radius: 10px;
+    width: 50vw;
+    height: 40vh;
+    background-image: url(https://images.unsplash.com/photo-1615917018845-f705f7ec1388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1956&q=80);
+    background-size: cover;
+    background-position: center;  
+}
+#thanks{
+    padding: 5vw;
+    position: absolute;
+    top:15%;
+    gap: 5vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: copper;
+}
+#rightthanks>h1>span{
+    position: relative;
+}
+#rightthanks>h1>span::after{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 4vw;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    bottom: -90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#thanksflex{
+    display: flex;
+    height: 65vh;
+    /* background-color: red; */
+    border-bottom: 1.5px solid #4444;
+
+}
+#rightthanks{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:5vh;
+    /* background-color: red; */
+}
+#rightthanks h1{
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+#rightthanks>.anime>h5{
+    font-size: 1.7vw;
+    margin-right: 1vh;
+}
+#leftthanks{
+    width: 70%;
+    height: 70vh;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.leftt1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:25%;
+    gap: 2vh;
+    /* background-color: red; */
+    height: 100%;
+}
+.leftt1 h1{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.leftt1 h5{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+#follow{
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#follow h1{
+    font-weight: 400;
+    font-size: 2vw;
+}
+#follwme{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+#follwme a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.8vw;
+} 
+#navpart3{
+    display: none;
+}
+#navpart3 i {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+
+
+
+/* rsponsive code  */
+
+@media (max-width:500px){
+    #nav{
+        padding: 11vw 4vw;
+    }
+    #nav h1{
+        font-size: 3vh;
+    }
+    #part2{
+        display: none;
+    }
+    #navpart3{
+        display: flex;
+    }
+    #navpart3 i {
+        font-size: 3vh;
+    }
+    #page1 {
+        display:block;
+    }
+    #page1 h1{
+       margin-top: 20vh;
+       font-size: 4vh;
+    }
+    #page1 #img1 {
+        height: 80vh;
+        width: 100%;
+        left: 0%;
+        top: 20%;
+        position: absolute;
+    }
+    #page1 #img2{
+        display: none;
+    }
+    #page1 #img3{
+        display: none;
+    }
+    #page2{
+        height: 45vh;
+        padding-top: 5vh;
+    }
+    #page2 h2 {
+        font-size: 1.8vh;   
+    }
+    
+    #page2 h1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 2.8vh;
+    }
+    #page2 h1 span::after {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 6.5vw;
+        background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+        background-size: cover;
+        bottom: -45%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+    #icon1 {
+        position: relative;
+        width: 8vh;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+    
+    .anime {
+        gap: 3vw;
+        /* background-color: red; */
+    }
+    
+    #page2 h5 {
+        font-size: 2vh;
+    }
+    
+    #icon1 i {
+        font-size: 2.4vh;
+    }
+    #page3{
+        flex-direction: column;
+    }
+    #photu{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    
+    #lphotu1 {
+        width: 30vw;
+    }
+    
+    #lphotu2 {
+        width: 30vw;
+    }
+    
+    #rphotu1 {
+        margin-left: 3vw;
+        width: 50vw;
+    }
+    
+    #rphotu2 {
+        margin-left: 3vw;
+        width: 60vw;
+        height: 40vh;
+    }
+    #solution{
+        width: 100%;
+        padding-left: 3vh;
+    }
+    #solution h1 {
+        padding-top: 10vh;
+        font-size: 3.8vh;
+    }
+    #solution p {
+        font-size: 1.4vh;
+        line-height: 2vh;
+    }
+    #about h5 {
+        font-size: 2vh;
+    }
+    .icon i {
+        font-size: 3vh;
+    }
+    
+    #page4{
+        height: initial;
+    }
+    #brandpic {
+        padding-top: 10vh;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .pic1 {
+        position: relative;
+        border-radius: 5px;
+        width: 90vw;
+        /* background-color: yellow; */
+        height: 30vh;
+        overflow: hidden;
+    }
+    .brand {
+        width: 100%;
+        padding-left: 2vw;
+        position: absolute;
+        /* background-color:red; */
+        bottom: 4%;
+        color: #fff;
+        font-size: 1.3vw;
+        font-family: copper;
+        font-weight: 400;
+    }
+    .brand h1{
+        font-size: 4vh;
+        font-weight: 400;
+    }
+    .brand .anime h5{
+        font-size: 2vh;
+        font-weight: 400;
+    }
+    #about2 {
+        gap: 1vh;
+        margin-top: 5vh;
+    }
+    
+    #about2 h5 {
+        font-size: 2vh;
+    }
+    #page5 {
+        height: 80vh;
+    }
+    .top{
+         font-size: 1.5vh;
+    }
+    .middle{
+        font-size: 1.9vh;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    .bottom{
+         font-size: 1.5vh;
+    }
+    
+    #contact{
+        width: 80vw;
+        height: 20vh; 
+    }
+    #thanks{
+        padding: 0vh;
+        top:10%;
+        height: 100vh;
+    }
+    #rightthanks>h1>span::after{
+        width: 120%;
+        height: 10vw;
+        background-size: cover;
+        bottom: -50%;
+    }
+    #thanksflex{
+        flex-direction: column-reverse;  
+    }
+    #rightthanks{
+        width: 100%;
+    }
+    #rightthanks h1{
+        font-weight: 400;
+        font-size: 4vh;
+    }
+    #rightthanks>.anime>h5{
+        font-size: 3vh;
+        margin-right: 1vh;
+    }
+    #leftthanks{
+        width: 100%;
+    }
+    .leftt1{
+        margin-top: 10vh;
+        width:35%;
+    }
+    .leftt1 h1{
+        font-size: 2vh;
+    }
+    .leftt1 h5{
+        font-size: 1.5vh;
+    }
+    #follow{
+        padding: 1vh 5vh;
+        flex-direction: column;
+    }
+    #follow h1{
+        font-weight: 400;
+        font-size: 4vh;
+    }
+    #follwme{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #follwme a{
+       text-decoration: none;
+       color: #fff;
+       font-size: 3vh;
+    }    
+}
+
+
